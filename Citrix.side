@@ -1,0 +1,744 @@
+{
+  "id": "b534be8d-ff80-4864-b783-76ee63b9c616",
+  "version": "2.0",
+  "name": "Citrix",
+  "url": "https://identity.citrix.com/Utility/STS/Sign-In?ReturnUrl=%2fUtility%2fSTS%2fsaml20%2fpost-binding-response",
+  "tests": [{
+    "id": "b57ffe41-74a2-4bdd-87ae-c38da67181e4",
+    "name": "TC 1",
+    "commands": [{
+      "id": "3aafb6aa-d8a4-4bf6-8856-ae7132f6cbd5",
+      "comment": "",
+      "command": "open",
+      "target": "https://identity.citrix.com/Utility/STS/Sign-In?ReturnUrl=%2fUtility%2fSTS%2fsaml20%2fpost-binding-response",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1e087e73-3043-47f6-bf32-08f44457ed0b",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "//img[@src='/Utility/STS/Content/Citrix_Logo_Black_150.png']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d043f9e7-8aa9-4447-b8ac-03ac114af344",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "//h1[contains(text(),'Sign In')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3a6a983b-a5f8-4e95-8374-2d38d0b72b6c",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "//input[@id='userName']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2bfc6800-9fe1-45c5-9afa-8beab9bb4b84",
+      "comment": "",
+      "command": "clickAt",
+      "target": "//input[@id='password']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "565c25a0-203d-49c5-8f8f-2140d0b605db",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "//input[@id='password']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9cc598d8-c0d3-4321-a2dd-79136253c39a",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "//a[contains(text(),'Reset password')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f04e60aa-9f68-47e8-a4ba-92c29653921c",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "//div[@id='idKMSI']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9d762f27-5796-4437-a05e-812373a0adaa",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "//input[@value='Sign in']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c0fa3be0-dfd0-4025-8a9e-103f41a9fac4",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "//a[contains(text(),'Create Citrix Account')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9b4f6108-9342-4356-a839-cbdcc36730e9",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "//div[@id='idCantAccess']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7e89d330-10de-43cd-b1a9-aefa8d81bd6e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "//a[contains(text(),'Let us know!')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "32d1c0b1-935d-4633-9f1e-592385314ca3",
+      "comment": "",
+      "command": "pause",
+      "target": "3000",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "f50642b0-8d26-4cdc-ad68-51fa4eeda27f",
+    "name": "TC 1-Username",
+    "commands": [{
+      "id": "f2991224-9f59-4066-a9e8-0ddf3e903fc9",
+      "comment": "",
+      "command": "open",
+      "target": "https://identity.citrix.com/Utility/STS/Sign-In?ReturnUrl=%2fUtility%2fSTS%2fsaml20%2fpost-binding-response",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a3114cf5-4784-4efa-a78f-4cb4b19993e0",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "//input[@name='userName']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2a4356d0-ec71-44fe-b9c4-bba4a6347b8c",
+      "comment": "",
+      "command": "type",
+      "target": "//input[@name='password']",
+      "targets": [],
+      "value": "dfghjk"
+    }, {
+      "id": "e67f8a39-69c5-4e04-86f6-b2bc6dcdc825",
+      "comment": "",
+      "command": "clickAt",
+      "target": "//input[@type='submit']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ea0021d3-a95d-490d-91b3-a99dca7c1daf",
+      "comment": "",
+      "command": "pause",
+      "target": "3000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d20f3a56-049c-4938-ac20-b18f21d588f0",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "//*[text()='Error Code: 115 Reason: A valid username was not provided: username cannot be null']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ecd9cb75-7b88-42a7-b63c-f9b1e28c3fd1",
+      "comment": "",
+      "command": "pause",
+      "target": "3000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "12e60991-42cc-4ce0-85a8-4aa638846cf6",
+      "comment": "",
+      "command": "open",
+      "target": "https://identity.citrix.com/Utility/STS/Sign-In?ReturnUrl=%2fUtility%2fSTS%2fsaml20%2fpost-binding-response",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "728099cf-9189-4771-b722-9a8f9d8810b6",
+      "comment": "",
+      "command": "clickAt",
+      "target": "//input[@name='userName']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9bd49180-da17-4d52-8029-2742082cb4a3",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "//input[@placeholder='Username']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8aa5e525-5cde-4fe2-8e36-6f09fb0efdac",
+      "comment": "",
+      "command": "pause",
+      "target": "3000",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "9982532a-6269-421c-b6b4-282cca44e256",
+    "name": "TC 1-Password",
+    "commands": [{
+      "id": "9244c144-dd31-4de4-8f8b-a15c034c5186",
+      "comment": "",
+      "command": "open",
+      "target": "https://identity.citrix.com/Utility/STS/Sign-In?ReturnUrl=%2fUtility%2fSTS%2fsaml20%2fpost-binding-response",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d776d736-da5f-4ec2-8898-69102e0add0a",
+      "comment": "",
+      "command": "type",
+      "target": "//input[@placeholder='Username']",
+      "targets": [],
+      "value": "fghjk"
+    }, {
+      "id": "769bcafa-0449-4067-8a81-88b2ce99742f",
+      "comment": "",
+      "command": "clickAt",
+      "target": "//input[@type='submit']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f3c983de-d8f8-4e36-9177-67805eca43d2",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "//*[text()='The login credentials you entered are invalid.  Please try again.']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e0e9a658-6e1d-4203-b693-c6144a3f3195",
+      "comment": "",
+      "command": "pause",
+      "target": "3000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bb999644-be19-4b34-adf4-953cce201ad8",
+      "comment": "",
+      "command": "open",
+      "target": "https://identity.citrix.com/Utility/STS/Sign-In?ReturnUrl=%2fUtility%2fSTS%2fsaml20%2fpost-binding-response",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4150b8de-bd90-4e5c-ac48-a3c45c06aec3",
+      "comment": "",
+      "command": "clickAt",
+      "target": "//input[@name='password']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "62ca6e85-5155-4799-9d91-df76f4020cc3",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "//input[@placeholder='Password']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eb6306dd-ce82-4fb2-8877-23f7ec5487a3",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "e150594b-2c95-4cea-97f2-5df5d98cc4c4",
+    "name": "TC 2",
+    "commands": [{
+      "id": "db091e0e-8220-4ff7-b1cb-b52dc2697df4",
+      "comment": "",
+      "command": "open",
+      "target": "https://identity.citrix.com/Utility/STS/Sign-In?ReturnUrl=%2fUtility%2fSTS%2fsaml20%2fpost-binding-response",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9ece8f87-a234-4cef-991f-15c04d60a210",
+      "comment": "",
+      "command": "type",
+      "target": "//input[@name='userName']",
+      "targets": [],
+      "value": "Ajla Sp"
+    }, {
+      "id": "2f4ecd3b-b322-40dc-af28-624182eb5b4f",
+      "comment": "",
+      "command": "type",
+      "target": "//input[@name='password']",
+      "targets": [],
+      "value": "Citrix12*"
+    }, {
+      "id": "797f6b59-a4a4-4ab6-9079-7bf9b49b5ee4",
+      "comment": "",
+      "command": "clickAt",
+      "target": "//input[@type='submit']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5863567a-0ae3-48b2-a2b7-2cd6118a7a4b",
+      "comment": "",
+      "command": "pause",
+      "target": "3000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c02acdeb-e123-46ea-929d-a0a1deb2f0ad",
+      "comment": "",
+      "command": "answerOnNextPrompt",
+      "target": "https://www.citrix.com/account/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0da695e1-d3cc-4856-88a9-54017a3688cb",
+      "comment": "",
+      "command": "pause",
+      "target": "3000",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "7e530630-4c9d-4385-aef6-1a3f489d6f8c",
+    "name": "TC 3",
+    "commands": [{
+      "id": "00f9c11c-76ce-4b2f-8b20-3b56ab69980e",
+      "comment": "",
+      "command": "open",
+      "target": "https://identity.citrix.com/Utility/STS/Sign-In?ReturnUrl=%2fUtility%2fSTS%2fsaml20%2fpost-binding-response",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "69d1a41e-b42a-4560-a5ef-3bf49556622e",
+      "comment": "",
+      "command": "type",
+      "target": "//input[@name='userName']",
+      "targets": [],
+      "value": "Ajla Sp"
+    }, {
+      "id": "1e88c1f4-f3a4-4a24-8fc6-271ac0ab1979",
+      "comment": "",
+      "command": "type",
+      "target": "//input[@name='password']",
+      "targets": [],
+      "value": "DHJFK"
+    }, {
+      "id": "9b39fcc8-fa73-4a29-92b3-6a3e50d275b6",
+      "comment": "",
+      "command": "clickAt",
+      "target": "//input[@type='submit']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c175bbe8-dc78-418e-833b-9d32fd9f14e9",
+      "comment": "",
+      "command": "pause",
+      "target": "3000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4a17cbab-45ab-41ac-84e6-9c9e26609991",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "//*[text()='The login credentials you entered are invalid.  Please try again.']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7437fb84-7274-4089-8eb7-d4812be329c9",
+      "comment": "",
+      "command": "pause",
+      "target": "3000",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "38065ec5-6e7e-4730-b4ee-66651f571616",
+    "name": "TC 4",
+    "commands": [{
+      "id": "d3c34b94-100f-4388-8fa3-1bae34d437f7",
+      "comment": "",
+      "command": "open",
+      "target": "https://identity.citrix.com/Utility/STS/Sign-In?ReturnUrl=%2fUtility%2fSTS%2fsaml20%2fpost-binding-response",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bf45e94e-b076-4fdf-ba56-b2c14184ced3",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "//input[@name='userName']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c4d6b063-08e2-41e6-96db-80c73b6b137c",
+      "comment": "",
+      "command": "type",
+      "target": "//input[@name='password']",
+      "targets": [],
+      "value": "Citrix12*"
+    }, {
+      "id": "ad9c5981-14a4-4418-a7cc-6a10ef556b31",
+      "comment": "",
+      "command": "clickAt",
+      "target": "//input[@type='submit']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "263b0ae7-323f-4633-bf34-b1a9afc6bc86",
+      "comment": "",
+      "command": "pause",
+      "target": "3000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "80c1fb05-6f63-4835-b065-8242c9f4dfd0",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "//*[text()='Error Code: 115 Reason: A valid username was not provided: username cannot be null']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f1cdcfa5-8b6c-4614-9335-4b3505b38700",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "b1bade16-0ef5-4f16-8fc8-f1a954ab7d4d",
+    "name": "TC 5",
+    "commands": [{
+      "id": "436d3099-060c-4612-a960-699f65a75faa",
+      "comment": "",
+      "command": "open",
+      "target": "https://identity.citrix.com/Utility/STS/Sign-In?ReturnUrl=%2fUtility%2fSTS%2fsaml20%2fpost-binding-response",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f5da569a-cea6-4a6f-8ec3-a18cc97e20a6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Reset password",
+      "targets": [
+        ["linkText=Reset password", "linkText"],
+        ["css=#idResetPasswordLink > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Reset password')]", "xpath:link"],
+        ["xpath=//div[@id='idResetPasswordLink']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.citrix.com/welcome/request-password.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Reset password')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8e3ffe9-41b9-47cb-ae52-b56063521586",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.origin + window.location.pathname",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": "https://www.citrix.com/welcome/request-password.html"
+    }, {
+      "id": "97eb4f2e-5f34-4b36-b93d-cd647e7f1508",
+      "comment": "",
+      "command": "pause",
+      "target": "3000",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "5b443c1d-8eae-4882-9145-5ab600daff58",
+    "name": "TC 6",
+    "commands": [{
+      "id": "15b734b0-3158-45d9-9eb1-23f2b80a45ea",
+      "comment": "",
+      "command": "open",
+      "target": "https://identity.citrix.com/Utility/STS/Sign-In?ReturnUrl=%2fUtility%2fSTS%2fsaml20%2fpost-binding-response",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "852bf7f8-c35a-4a96-afbd-dfaf66c2e785",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='idPassword']/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "74e57398-1d30-4a99-9129-8e0ba9a0f268",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='idPassword']/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "gskdfifdkfčd"
+    }, {
+      "id": "bc6a409a-486e-46a4-8d7f-8d617eb3a0e2",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [],
+      "value": "${passwordValue}"
+    }, {
+      "id": "d89f0808-13c3-484f-97e2-a24c11f8c138",
+      "comment": "",
+      "command": "pause",
+      "target": "3000",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "954f0359-147c-4755-8b5b-e27b405332b0",
+    "name": "TC 7",
+    "commands": [{
+      "id": "59ac496c-7884-45dd-88e4-9bba4884aaff",
+      "comment": "",
+      "command": "open",
+      "target": "https://identity.citrix.com/Utility/STS/Sign-In?ReturnUrl=%2fUtility%2fSTS%2fsaml20%2fpost-binding-response",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fef2e879-3623-4d8b-a0a0-7bcc9bde2c02",
+      "comment": "",
+      "command": "type",
+      "target": "id=userName",
+      "targets": [
+        ["id=userName", "id"],
+        ["name=userName", "name"],
+        ["css=#userName", "css:finder"],
+        ["xpath=//input[@id='userName']", "xpath:attributes"],
+        ["xpath=//div[@id='idUsername']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Ajla Sp"
+    }, {
+      "id": "0fb307f5-3b30-4b8f-a1e8-dcc6724bb496",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='idPassword']/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c4e476b6-c422-4051-858a-b918a8b974b5",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='idPassword']/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Citrix12*"
+    }, {
+      "id": "35265c81-e9f6-45d0-b53c-1ea8396e6099",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='idPassword']/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "54d69cbb-e9ea-412a-98d0-27a1e76e3e30",
+      "comment": "",
+      "command": "pause",
+      "target": "3000",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "c7587bb7-c259-42af-8715-a6b2eac0b920",
+    "name": "TC 9",
+    "commands": [{
+      "id": "10d144a0-2369-4798-8269-fd9b6e87a97a",
+      "comment": "",
+      "command": "open",
+      "target": "https://identity.citrix.com/Utility/STS/Sign-In?ReturnUrl=%2fUtility%2fSTS%2fsaml20%2fpost-binding-response",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "119c6a22-beff-4512-9c09-0f0fa9d330bb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1225x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4bfe5773-260c-4892-8e31-f4cce31e52d8",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='idPassword']/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "73bebfb3-a2e1-4467-8478-c677886645ea",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='idPassword']/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "HDKUHLKG"
+    }, {
+      "id": "ee788e12-a183-457d-a81f-ec273820a3d1",
+      "comment": "",
+      "command": "click",
+      "target": "css=#idSubmit > input",
+      "targets": [
+        ["css=#idSubmit > input", "css:finder"],
+        ["xpath=//input[@value='Sign in']", "xpath:attributes"],
+        ["xpath=//div[@id='idSubmit']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "905db219-a6c3-4ebf-9f3d-84c242f7160f",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//*[text()='Error Code: 115 Reason: A valid username was not provided: username cannot be null']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1dead91e-ddb1-424b-9d13-d308bfab42b7",
+      "comment": "",
+      "command": "pause",
+      "target": "3000",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "0466355d-24fe-455a-ade2-aecb50599dea",
+    "name": "TC 10",
+    "commands": [{
+      "id": "6515b168-695e-47a5-9638-1099f37db44a",
+      "comment": "",
+      "command": "open",
+      "target": "https://identity.citrix.com/Utility/STS/Sign-In?ReturnUrl=%2fUtility%2fSTS%2fsaml20%2fpost-binding-response",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e3e66282-837e-4659-b98e-d586aaa5f571",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Create Citrix Account",
+      "targets": [
+        ["linkText=Create Citrix Account", "linkText"],
+        ["css=#idCreateAccount > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Create Citrix Account')]", "xpath:link"],
+        ["xpath=//div[@id='idCreateAccount']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.citrix.com/welcome/create-account.html')]", "xpath:href"],
+        ["xpath=//div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Create Citrix Account')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "08f81cb3-704d-436e-98d6-51a2c8eace97",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.origin + window.location.pathname",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": "https://www.citrix.com/welcome/create-account/"
+    }, {
+      "id": "044d4bd8-9d87-4dd0-a911-bd1b7d72b016",
+      "comment": "",
+      "command": "pause",
+      "target": "3000",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "5ea5ad88-aa71-4c0d-be08-a9c572b9207c",
+    "name": "TC 8",
+    "commands": [{
+      "id": "5b4bddaf-11c6-4943-9858-bf823a7dfc89",
+      "comment": "",
+      "command": "open",
+      "target": "https://identity.citrix.com/Utility/STS/Sign-In?ReturnUrl=%2fUtility%2fSTS%2fsaml20%2fpost-binding-response",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3099f608-28b7-4d2e-a077-2026f15f7039",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Let us know!",
+      "targets": [
+        ["linkText=Let us know!", "linkText"],
+        ["css=#idCantAccess > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Let us know!')]", "xpath:link"],
+        ["xpath=//div[@id='idCantAccess']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://support.citrix.com/article/CTX228792')]", "xpath:href"],
+        ["xpath=//div[3]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Let us know!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "08304f3e-67f2-48e5-9260-80c24f3afaa5",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.origin + window.location.pathname",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": "https://support.citrix.com/article/CTX228792"
+    }, {
+      "id": "86facc8c-6414-4530-ad18-744034e3f6d1",
+      "comment": "",
+      "command": "pause",
+      "target": "3000",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "643e23ea-7e4d-4884-9e70-4daf0456e6ae",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b57ffe41-74a2-4bdd-87ae-c38da67181e4"]
+  }],
+  "urls": ["https://identity.citrix.com/Utility/STS/Sign-In?ReturnUrl=%2fUtility%2fSTS%2fsaml20%2fpost-binding-response"],
+  "plugins": []
+}
